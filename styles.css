@@ -58,6 +58,15 @@ body {
   letter-spacing: 0.25em;
 }
 
+.icons {
+  font-size: 50px;
+  padding-right: 0.5em;
+}
+
+.pink-span {
+  background-color: #ffc8fbff;
+}
+
 /*NAVBAR*/
 .navbar {
   background-color: #ffc8fbff;
