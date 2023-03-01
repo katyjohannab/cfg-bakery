@@ -127,9 +127,13 @@ body {
   background-color: #ffe4f3ff;
 }
 
+.engaging-message {
+  word-break: word-break;
+}
+
 .engaging-text {
   color: #595758ff;
-  font-size: 80px;
+  font-size: 8em;
   font-family: "Karla", sans-serif;
   letter-spacing: 0.25em;
   opacity: 0.8;
