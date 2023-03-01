@@ -83,7 +83,7 @@ body {
 .navbar a:link {
   transition: 0.7s;
   color: grey;
-  font-size: 20px;
+  font-size: 26px;
   text-decoration: none;
   padding: 0 10px;
   margin: 0 10px;
@@ -94,7 +94,7 @@ body {
 .navbar a:link:hover {
   background-color: white;
   color: #595758ff;
-  padding: 24px 10px;
+  padding: 26px 10px;
 }
 
 /*ENGAGING TEXT AND IMAGE HEADER*/
