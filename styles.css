@@ -133,13 +133,18 @@ body {
 
 .engaging-text {
   color: #595758ff;
-  font-size: 8em;
+  font-size: 10vh;
   font-family: "Karla", sans-serif;
   letter-spacing: 0.25em;
   opacity: 0.8;
   column-gap: 0;
+  text-align: center;
 }
 
+.button-container {
+  margin: auto;
+  text-align: center;
+}
 .menu-button {
   transition: all 0.5s ease;
   padding: 0.5em;
