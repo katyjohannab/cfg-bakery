@@ -89,7 +89,7 @@ body {
   margin: 0 10px;
   font-family: "Inconsolata", monospace;
   text-transform: none;
-  font-size: 24px;
+  font-size: 20px;
 }
 .navbar a:link:hover {
   background-color: white;
