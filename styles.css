@@ -326,9 +326,10 @@ We hide :before pseudo-element on :active
   padding: 2em;
   border-top: solid 2px #ff92c2ff;
   border-bottom: solid 2px #ff92c2ff;
+  padding-bottom: 6em;
 }
 .two-images {
-  background-color: #ffc8fbff;
+  background-color: #ff92c2ff;
   margin-bottom: 8em;
 }
 
