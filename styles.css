@@ -33,7 +33,6 @@ body {
   color: #595758ff;
   border-top: 10px solid #ff92c2ff;
   border-bottom: 10px solid #ff92c2ff;
-  position: relative;
 }
 
 /*TEXT ELEMENTS*/
@@ -123,6 +122,16 @@ body {
   background-image: cover;
 }
 
+.header-container {
+  position: relative;
+}
+
+/*sub-heading {
+  position:absolute;
+  margin-left:10px;
+  margin-bottom:100px;
+}*/
+
 .white-bg {
   background-color: white;
 }
@@ -149,12 +158,14 @@ body {
   text-align: center;
   line-height: 1;
   padding-top: 0.6em;
+  position: relative;
 }
 
 .button-container {
   margin: auto;
   text-align: center;
   padding-bottom: 0.8em;
+  position: relative;
 }
 .menu-button {
   transition: all 0.5s ease;
@@ -179,6 +190,8 @@ body {
   font-weight: bold;
 }
 
+/*GRID FEATURE ROW*/
+.
 /*CAKE FACTS*/
 
 .cake-facts {
@@ -259,16 +272,32 @@ body {
   text-align: center;
 } */
 
-/*IMAGE LAYOUT AT BOTTOM*/
+/*CAKE COMPO SECTION*/
 
+.pink-compo-background {
+  background-color: #ffc8fbff;
+}
+
+.cake-compo {
+  font-family: "Berkshire Swash", cursive;
+  color: white;
+  font-weight: 400;
+  font-size: 80px;
+  text-align: center;
+
+  border-bottom: none;
+}
 .container-layout {
+  border-top: solid 10px #ff92c2ff;
+  border-bottom: solid 10px #ff92c2ff;
   display: grid;
   grid-gap: 8px;
   grid-template-columns: repeat(5, minmax(150px, 1fr));
   grid-template-rows: repeat(1, minmax(200px, 1fr));
   background-color: white;
   margin-bottom: 5em;
-  margin-top: 5em;
+  margin-top: 0em;
+  width: 100%;
 }
 
 .container-layout > div {
@@ -301,11 +330,10 @@ body {
 }
 
 .pink-text {
-  background-color: #ffeef2ff;
   background-size: cover;
   color: #595758ff;
   font-family: "inconsolata", monospace;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: lighter;
   justify-content: center;
   padding-top: 0.5em;
@@ -326,8 +354,63 @@ body {
   background-color: rgb(178, 190, 181, 0.5);
 }
 
+/*CAKE COMPO FORM*/
+
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+
+.feedback-input {
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 0px;
+  line-height: 22px;
+  background-color: #ffe4f3ff;
+  border: 2px solid #ff92c2ff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #ff92c2ff;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Inconsolata", monospace;
+  width: 100%;
+  background: white;
+  border-radius: 0px;
+  border: 2px solid #ff92c2ff;
+  cursor: pointer;
+  color: grey;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #ff92c2ff;
+  color: #595758ff;
+}
+
+/*FOOTER*/
 .footer-pink {
-  background-color: #ffc8fbff;
+  background-color: #ffe4f3ff;
   width: 100%;
   height: 3em;
   text-align: center;
