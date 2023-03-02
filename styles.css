@@ -29,6 +29,14 @@ Playfair & Lato
 
 /*PAGE SECTIONS*/
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   color: #595758ff;
   border-top: 10px solid #ff92c2ff;
@@ -141,11 +149,12 @@ body {
 }
 
 .engaging-header {
-  background-color: #ffe4f3ff;
+  background-color: transparent;
 }
 
 .engaging-message {
-  word-break: word-break;
+  word-break: "word-break";
+  width: fit-content;
 }
 
 .engaging-text {
@@ -159,29 +168,38 @@ body {
   line-height: 1;
   padding-top: 0.6em;
   position: relative;
+  overflow: hidden;
 }
 
 .button-container {
-  margin: auto;
   text-align: center;
-  padding-bottom: 0.8em;
+
   position: relative;
+  border-top: solid 2px #595758ff;
+  border-bottom: solid 2px #595758ff;
+  border-left: white;
+  border-right: white;
+  margin-bottom: 0.8em;
+}
+
+.button-hover {
+  text-align: center;
 }
 .menu-button {
+  border: white;
+  margin: none;
   transition: all 0.5s ease;
   padding: 0.5em;
   background-color: white;
-  position: relative;
-  font-family: "inconsolata", mono-space;
+  font-family: "Inconsolata", monospace;
   letter-spacing: 0.5em;
   font-size: 20px;
   color: #595758ff;
-  border: 2px solid #595758ff;
   text-transform: uppercase;
-  margin-top: 1em;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  overflow: hidden;
+  width: fit-content;
+  display: inline-block;
 }
 
 .menu-button:hover {
@@ -190,8 +208,105 @@ body {
   font-weight: bold;
 }
 
+/* .button */
+
+.menu-button .button-hover {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.menu-button:before,
+.menu-button:after {
+  content: "";
+  position: absolute;
+  top: 0.67em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.4s, opacity 0.6s;
+  -moz-transition: 0.4s, opacity 0.6s;
+  -o-transition: 0.4s, opacity 0.6s;
+  transition: 0.4s, opacity 0.6s;
+}
+
+/* :before */
+
+.menu-button:before {
+  content: attr(data-hover);
+  -webkit-transform: translate(-150%, 0);
+  -moz-transform: translate(-150%, 0);
+  -ms-transform: translate(-150%, 0);
+  -o-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+}
+
+/* :after */
+
+.menu-button:after {
+  content: attr(data-active);
+  -webkit-transform: translate(150%, 0);
+  -moz-transform: translate(150%, 0);
+  -ms-transform: translate(150%, 0);
+  -o-transform: translate(150%, 0);
+  transform: translate(150%, 0);
+}
+
+/* Span on :hover and :active */
+
+.menu-button:hover .button-hover,
+.button:active .button-hover {
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+/*  
+  We show :before pseudo-element on :hover 
+  and :after pseudo-element on :active 
+*/
+
+.menu-button:hover:before,
+.menu-button:active:after {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* 
+We hide :before pseudo-element on :active
+*/
+
+.menu-button:active:before {
+  -webkit-transform: translate(-150%, 0);
+  -moz-transform: translate(-150%, 0);
+  -ms-transform: translate(-150%, 0);
+  -o-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+/*
 /*GRID FEATURE ROW*/
-.
+
 /*CAKE FACTS*/
 
 .cake-facts {
