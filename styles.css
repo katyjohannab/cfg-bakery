@@ -59,9 +59,14 @@ body {
   letter-spacing: 0.1em;
 }
 
+.icons-header {
+  font-size: 50px;
+  color: #595758ff;
+}
 .icons {
   font-size: 50px;
-  padding-right: 0.5em;
+  margin-left: -0.3em;
+  color: #595758ff;
 }
 
 .pink-span {
@@ -112,7 +117,6 @@ body {
   border: 1px solid transparent;
   width: auto;
   height: 42em;
-  background-color: #ffe4f3ff;
   background-image: url("./main-cake.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -121,6 +125,10 @@ body {
 
 .white-bg {
   background-color: white;
+}
+
+.transparent-bg {
+  background-color: transparent;
 }
 
 .engaging-header {
@@ -181,11 +189,14 @@ body {
 .sub-heading {
   padding-top: 10em;
   padding-bottom: 10em;
-  padding-left: 10em;
-  padding-right: 10em;
 }
 
 /*TWO IMAGES SEC*/
+
+.two-imagesbg {
+  background-color: #ffc8fbff;
+  padding: 2em;
+}
 .two-images {
   background-color: #ffc8fbff;
   padding: 2em;
@@ -193,6 +204,10 @@ body {
 }
 .cake-spacing {
   padding-bottom: 2em;
+}
+
+.cake-images {
+  width: 60%;
 }
 
 /*CAKE QUOTE*/
@@ -218,10 +233,6 @@ body {
   width: 800px;
 }
 /*HEADINGS*/
-
-.cake-images {
-  width: 50%;
-}
 
 /*CAROUSEL*/
 .carousel-padding {
