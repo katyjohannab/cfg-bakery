@@ -322,16 +322,43 @@ We hide :before pseudo-element on :active
 /*TWO IMAGES SEC*/
 
 .two-imagesbg {
-  background-color: #ffc8fbff;
+  background-color: white;
   padding: 2em;
+  border-top: solid 2px #ff92c2ff;
+  border-bottom: solid 2px #ff92c2ff;
 }
 .two-images {
   background-color: #ffc8fbff;
-  padding: 2em;
   margin-bottom: 8em;
 }
+
 .cake-spacing {
-  padding-bottom: 2em;
+  padding-top: 4em;
+}
+
+.two-images-button {
+  border: white;
+  margin: none;
+  transition: all 0.5s ease;
+  padding: 0.5em;
+  background-color: white;
+  font-family: "Inconsolata", monospace;
+  letter-spacing: 0.5em;
+  font-size: 20px;
+  color: #595758ff;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  width: fit-content;
+  display: inline-block;
+}
+
+.two-images-button:hover {
+  background-color: white;
+  color: #ff92c2ff;
+  font-weight: bold;
+  border-top: solid 1px #595758ff;
+  border-bottom: solid 1px #595758ff;
 }
 
 .cake-images {
