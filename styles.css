@@ -312,14 +312,57 @@ body {
   padding-bottom: 5em;
 }
 
+/*HEADINGS FOR TWO IMAGES/CAKE QUOTES SECTION*/
+.sub-headings-right {
+  font-family: "Berkshire Swash", cursive;
+  color: #595758ff;
+  font-weight: 400;
+  font-size: 100px;
+  margin-right: 200px;
+}
+
+.mini-sub-right {
+  font-family: "Inconsolata", monospace;
+  background-color: #595758ff;
+  text-transform: uppercase;
+  size: 10px;
+  font-weight: bold;
+  color: white;
+  margin-right: 200px;
+}
+
+.sub-headings-left {
+  font-family: "Berkshire Swash", cursive;
+  color: #595758ff;
+  font-weight: 400;
+  font-size: 100px;
+  margin-left: 0px;
+}
+
+.mini-sub-left {
+  font-family: "Inconsolata", monospace;
+  background-color: #595758ff;
+  text-transform: uppercase;
+  size: 10px;
+  font-weight: bold;
+  color: white;
+  margin-left: 200px;
+}
+
+.minisub-pt {
+  padding-top: 10em;
+  padding-bottom: 0;
+  border-bottom: solid 2px #ff92c2ff;
+  width: 100%;
+  margin-right: none;
+}
+
 /*TWO IMAGES SEC*/
 
 .two-imagesbg {
   background-color: white;
   padding: 2em;
-  border-top: solid 2px #ff92c2ff;
-  border-bottom: solid 2px #ff92c2ff;
-  padding-bottom: 6em;
+  padding-bottom: 0em;
 }
 .two-images {
   background-color: #ff92c2ff;
@@ -363,12 +406,12 @@ body {
 .cake-quote {
   background-color: #ffeef2ff;
   width: 100%;
-  margin-top: 10em;
+  margin-top: 0em;
   margin-bottom: 10em;
   width: 100%;
   font-family: "Inconsolata", sans-serif;
   font-size: 20px;
-  padding-top: 3em;
+  padding-top: 0em;
   padding-bottom: 0;
 }
 
