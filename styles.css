@@ -63,7 +63,7 @@ body {
   font-family: "Inconsolata", mono-space;
   color: #595758ff;
   font-weight: lighter;
-  font-size: 1.8em;
+  font-size: 2vw;
   letter-spacing: 0.1em;
 }
 
@@ -72,7 +72,7 @@ body {
   color: #595758ff;
 }
 .icons {
-  font-size: 50px;
+  font-size: 40px;
   margin-left: -0.3em;
   color: #595758ff;
 }
@@ -308,9 +308,79 @@ body {
   margin-bottom: 5em;
 }
 
+/*.facts-images {
+  width:20em;
+}*/
+
 .sub-heading {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  margin-bottom:2em;
+  margin-top:1em;
+}
+/*
+.tall-cake  {
+  border: 1px solid transparent;
+  
+  height: 30em;
+  width:fit-content;
+ 
+  background-image: url("./factscakes.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: contain;
+}
+*/
+
+.greyscale-cakes {
+  column-gap:0;
+  background-color:#ffc8fbff;
+  width:100%;
+}
+.greyscale2 {
+  width:30em;
+  opacity:0.3;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.greyscale3 {
+  width:30em;
+  opacity: 0.6;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.greyscale4 {
+  width:30em;
+  opacity: 0.9;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+
+
+#facts2 {
+  border: 1px solid transparent;
+  height: 30em;
+  background-image: url("./facts2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: contain;
+}
+#facts3  {
+  border: 1px solid transparent;
+  height: 30em;
+  width:50em;
+  background-image: url("./facts3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: contain;
+}
+
+.facts-text {
+  font-family:"Inconsolata", monospace;
+  font-size:20px;
+  color:#595758ff;
+  letter-spacing:normal;
+  
 }
 
 /*HEADINGS FOR TWO IMAGES/CAKE QUOTES SECTION*/
@@ -456,7 +526,7 @@ body {
   background-color: #ffe4f3ff;
   padding-bottom: 2em;
   padding-top: 2em;
-  margin-bottom: 6em;
+ margin-bottom:10em;
 }
 
 .carousel-width {
@@ -480,6 +550,9 @@ body {
 
 .pink-compo-background {
   background-color: #ffc8fbff;
+  padding-bottom:2em;
+  margin-bottom:3em;
+  margin-top:5em;
 }
 
 .cake-compo {
@@ -488,7 +561,7 @@ body {
   font-weight: 400;
   font-size: 80px;
   text-align: center;
-
+  padding-top:0.5em;
   border-bottom: none;
 }
 .container-layout {
