@@ -348,7 +348,7 @@ body {
 }
 .greyscale2 {
   width:30em;
-  opacity:0.3;
+  opacity:0.25;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   margin-left:0;
@@ -356,18 +356,28 @@ body {
 }
 .greyscale3 {
   width:30em;
-  opacity: 0.6;
+  opacity: 0.5;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 
 .greyscale4 {
   width:30em;
-  opacity: 0.9;
+  opacity: 0.75;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 
+.greyscale5 {
+  width:30em;
+  opacity: 1;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+#padding-override {
+  padding-left:0;
+}
 
 /*
 #facts2 {
@@ -517,6 +527,7 @@ body {
   
 }
 
+
 .quote-box {
   padding:2em;
   background-color:white;
@@ -536,7 +547,111 @@ body {
   display: flex;
 }
 
-/*HEADINGS*/
+/*ACCORDION SLIDER CODE*/
+/* Restoring browser properties */
+
+.p-section {
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#ffe4f3ff;
+    color:white;
+    text-transform:uppercase;
+    font-size:30px;
+    font-weight:bold;
+    
+}
+
+
+.p-body {
+	background-color: transparent;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.p-main_box {
+	width: 90%;
+	height: 80vh;
+	display: flex;
+}
+
+.p-img {
+	flex: 1;
+	height: 100%;
+	transform: skew(5deg);
+	cursor: pointer;
+	margin: 0 0.125em;
+	transition: all .3s;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border: 1px solid pink;
+	position: relative;
+}
+
+.p-acc {
+	position:relative;
+	bottom: 0;
+	left: 0;
+	padding: .75em;
+	background-color: transparent;
+  transition: all 0.3s;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.acc-span {
+  transform: rotate(-90deg);
+}
+
+.p-img1 {
+	background-image: url("./bakery-1.jpg");
+  opacity:0.8;
+  filter:grayscale(100%);
+}
+
+.p-img2 {
+	background-image: url("./bakery-2.jpg");
+  opacity:0.8;
+  filter:grayscale(100%);
+}
+
+.p-img3 {
+	background-image: url("./bakery-3.jpg");
+  opacity:0.8;
+  filter:grayscale(100%);
+}
+
+.p-img4 {
+	background-image: url("./bakery-4.jpg");
+  opacity:0.8;
+  filter:grayscale(100%);
+}
+
+.p-main_box:hover .p-img {
+	transform: skew(0);
+  
+}
+
+
+
+.p-img:hover {
+	flex: 5;
+  opacity:1;  
+  filter:grayscale(0);
+  text-transform:bold;
+  font-size:15px;
+}
+
+.p-img:hover .p-acc {
+	background-color: transparent;
+	border: .125em solid blue;
+	
+	transform: rotate(0deg);
+}
 
 /*CAROUSEL*/
 .carousel-padding {
