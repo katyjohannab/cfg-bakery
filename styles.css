@@ -130,10 +130,6 @@ body {
   background-image: cover;
 }
 
-.header-container {
-  position: relative;
-}
-
 /*sub-heading {
   position:absolute;
   margin-left:10px;
@@ -305,18 +301,27 @@ We hide :before pseudo-element on :active
   transition-delay: 0s;
 }
 /*
-/*GRID FEATURE ROW*/
 
-/*CAKE FACTS*/
 
-.cake-facts {
-  margin-bottom: 10em;
+/*/
+
+/**/
+
+/**CAKE FACTS*/
+
+/**/
+
+/**/
+
+.header-contain {
 }
 
-/*SUBHEADING*/
+.cake-facts {
+  margin-bottom: 5em;
+}
+
 .sub-heading {
-  padding-top: 10em;
-  padding-bottom: 10em;
+  padding-top: 1em;
 }
 
 /*TWO IMAGES SEC*/
@@ -358,7 +363,7 @@ We hide :before pseudo-element on :active
   background-color: white;
   color: #ff92c2ff;
   font-weight: bold;
-  border-top: solid 1px #595758ff;
+  border-top: none;
   border-bottom: solid 1px #595758ff;
 }
 
@@ -497,6 +502,14 @@ We hide :before pseudo-element on :active
   background-color: rgb(178, 190, 181, 0.5);
 }
 
+.cakecompo-subheading {
+  font-family: "Inconsolata", monospace;
+  color: #595758ff;
+  font-size: 25px;
+  font-weight: 400;
+  background: white;
+  text-align: center;
+}
 /*CAKE COMPO FORM*/
 
 form {
