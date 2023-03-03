@@ -97,11 +97,8 @@ body {
   color: #595758ff;
   font-weight: 400;
 }
-.nav-links {
-  color: grey;
-}
 
-.navbar a:link {
+.nav-item a:link {
   transition: 0.7s;
   color: grey;
   font-size: 26px;
@@ -112,10 +109,15 @@ body {
   text-transform: none;
   font-size: 20px;
 }
-.navbar a:link:hover {
+.nav-item a:hover {
   background-color: white;
   color: #595758ff;
   padding: 32px 10px;
+}
+
+.dropdown-menu a:hover {
+  padding: 0;
+  background-color: transparent;
 }
 
 /*ENGAGING TEXT AND IMAGE HEADER*/
