@@ -321,19 +321,7 @@ body {
   margin-bottom:2em;
   margin-top:1em;
 }
-/*
-.tall-cake  {
-  border: 1px solid transparent;
-  
-  height: 30em;
-  width:fit-content;
- 
-  background-image: url("./factscakes.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-image: contain;
-}
-*/
+
 
 .greyscale-images {
   height:auto;
@@ -548,7 +536,7 @@ body {
 }
 
 /*ACCORDION SLIDER CODE*/
-/* Restoring browser properties */
+
 
 .p-section {
   
@@ -556,11 +544,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color:#ffe4f3ff;
-    color:white;
+    color:#595758ff;
     text-transform:uppercase;
     font-size:30px;
-    font-weight:bold;
-    
+    font-family:"Inconsolata", monospace;
+    font-weight:900;
+      
 }
 
 
@@ -588,7 +577,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	border: 1px solid pink;
 	position: relative;
 }
 
@@ -604,7 +592,7 @@ body {
 }
 
 .acc-span {
-  transform: rotate(-90deg);
+  background-color:white;
 }
 
 .p-img1 {
@@ -647,8 +635,9 @@ body {
 }
 
 .p-img:hover .p-acc {
-	background-color: transparent;
-	border: .125em solid blue;
+	background-color: black;
+	border: .125em solid white;
+  background-color:white;
 	
 	transform: rotate(0deg);
 }
