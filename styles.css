@@ -320,6 +320,7 @@ body {
   font-weight: 400;
   font-size: 100px;
   margin-right: 200px;
+  
 }
 
 .mini-sub-right {
@@ -356,6 +357,12 @@ body {
   border-bottom: solid 2px #ff92c2ff;
   width: 100%;
   margin-right: none;
+}
+
+.subhead-mp {
+  margin-right: none;
+  width:100%;
+
 }
 
 /*TWO IMAGES SEC*/
