@@ -232,8 +232,6 @@ body {
   transition: 0.4s, opacity 0.6s;
 }
 
-/* :before */
-
 .menu-button:before {
   content: attr(data-hover);
   -webkit-transform: translate(-150%, 0);
@@ -242,8 +240,6 @@ body {
   -o-transform: translate(-150%, 0);
   transform: translate(-150%, 0);
 }
-
-/* :after */
 
 .menu-button:after {
   content: attr(data-active);
@@ -254,8 +250,6 @@ body {
   transform: translate(150%, 0);
 }
 
-/* Span on :hover and :active */
-
 .menu-button:hover .button-hover,
 .button:active .button-hover {
   opacity: 0;
@@ -265,11 +259,6 @@ body {
   -o-transform: scale(0.3);
   transform: scale(0.3);
 }
-
-/*  
-  We show :before pseudo-element on :hover 
-  and :after pseudo-element on :active 
-*/
 
 .menu-button:hover:before,
 .menu-button:active:after {
@@ -284,10 +273,6 @@ body {
   -o-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
-
-/* 
-We hide :before pseudo-element on :active
-*/
 
 .menu-button:active:before {
   -webkit-transform: translate(-150%, 0);
@@ -313,7 +298,7 @@ We hide :before pseudo-element on :active
 
 /**/
 
-.header-contain {
+.header-container {
 }
 
 .cake-facts {
@@ -321,7 +306,8 @@ We hide :before pseudo-element on :active
 }
 
 .sub-heading {
-  padding-top: 1em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 /*TWO IMAGES SEC*/
@@ -373,14 +359,15 @@ We hide :before pseudo-element on :active
 
 /*CAKE QUOTE*/
 .cake-quote {
-  background-color: #ffe4f3ff;
+  background-color: #ffeef2ff;
   width: 100%;
   margin-top: 10em;
   margin-bottom: 10em;
   width: 100%;
   font-family: "Inconsolata", sans-serif;
   font-size: 20px;
-  padding: 0;
+  padding-top: 3em;
+  padding-bottom: 0;
 }
 
 .row-eq-height {
