@@ -336,7 +336,7 @@ body {
   color: #595758ff;
   font-weight: 400;
   font-size: 100px;
-  margin-left: 0px;
+  m
 }
 
 .mini-sub-left {
@@ -346,7 +346,7 @@ body {
   size: 10px;
   font-weight: bold;
   color: white;
-  margin-left: 0px;
+  ;
 }
 
 .minisub-pt {
@@ -405,14 +405,23 @@ body {
 /*CAKE QUOTE*/
 .cake-quote {
   background-color: #ffeef2ff;
-  width: 100%;
   margin-top: 0em;
   margin-bottom: 10em;
-  width: 100%;
+  margin-right:auto;
+  margin-left:auto;
   font-family: "Inconsolata", sans-serif;
   font-size: 20px;
   padding-top: 0em;
-  padding-bottom: 0;
+  
+}
+
+.bakery-image {
+  width: 800px;
+}
+
+.quote-box {
+  padding-top:3em;
+  padding-bottom:6em;
 }
 
 .row-eq-height {
@@ -422,9 +431,6 @@ body {
   display: flex;
 }
 
-.bakery-image {
-  width: 800px;
-}
 /*HEADINGS*/
 
 /*CAROUSEL*/
