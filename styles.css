@@ -27,6 +27,8 @@ Playfair & Lato
 
 */
 
+/*TO DO - concertina carousel*/
+
 /*PAGE SECTIONS*/
 
 *,
@@ -308,6 +310,9 @@ body {
   margin-bottom: 5em;
 }
 
+.facts-box {
+  padding-top:5em;
+}
 /*.facts-images {
   width:20em;
 }*/
@@ -330,16 +335,24 @@ body {
 }
 */
 
+.greyscale-images {
+  height:auto;
+  
+}
 .greyscale-cakes {
   column-gap:0;
   background-color:#ffc8fbff;
   width:100%;
+  margin-left:0;
+  
 }
 .greyscale2 {
   width:30em;
   opacity:0.3;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+  margin-left:0;
+  padding-left:0;
 }
 .greyscale3 {
   width:30em;
@@ -356,7 +369,7 @@ body {
 }
 
 
-
+/*
 #facts2 {
   border: 1px solid transparent;
   height: 30em;
@@ -374,10 +387,14 @@ body {
   background-size: 100%;
   background-image: contain;
 }
+*/
 
+.marg-top {
+  padding-top:3em;
+}
 .facts-text {
   font-family:"Inconsolata", monospace;
-  font-size:20px;
+  font-size:30px;
   color:#595758ff;
   letter-spacing:normal;
   
