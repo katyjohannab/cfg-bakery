@@ -56,6 +56,7 @@ body {
   font-family: "Inconsolata", mono-space;
   font-size: 25px;
   color: #595758ff;
+  padding-left:1.5em;
 }
 
 .sub-text {
@@ -416,12 +417,22 @@ body {
 }
 
 .bakery-image {
-  width: 800px;
+  width: 600px;
+  padding:2em;
+  
 }
 
 .quote-box {
   padding-top:3em;
   padding-bottom:6em;
+  
+}
+
+.paragraph-bakery {
+  font-family: "Inconsolata", mono-space;
+  font-size: 25px;
+  color: #595758ff;
+  
 }
 
 .row-eq-height {
