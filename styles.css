@@ -549,6 +549,7 @@ body {
     font-size:30px;
     font-family:"Inconsolata", monospace;
     font-weight:900;
+    margin-bottom:8em;
       
 }
 
@@ -760,6 +761,131 @@ body {
   background: white;
   text-align: center;
 }
+.compimg {
+  height:600px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+/*COMPO HOVER BUTTON*/
+.compo-button-container{
+  text-align: center;
+  position: relative;
+  
+  
+}
+
+
+.compobutton {
+  border: white;
+  width:400px;
+  margin-bottom:2em;
+  transition: all 0.5s ease;
+  padding: 0.5em;
+  background-color: white;
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  color: #595758ff;
+  font-weight:bold;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+  width: fit-content;
+  display: inline-block;
+}
+
+.compobutton:hover  {  
+  font-weight: bold;
+  color:#595758ff;
+  
+}
+
+
+
+.compobutton .compohover  {
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+
+}
+
+.compobutton:before,
+.compobutton:after {
+  content: "";
+  position: absolute;
+  top: 0.67em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: 0.4s, opacity 0.6s;
+  -moz-transition: 0.4s, opacity 0.6s;
+  -o-transition: 0.4s, opacity 0.6s;
+  transition: 0.4s, opacity 0.6s;
+}
+
+.compobutton:before {
+  content: attr(data-hover);
+  -webkit-transform: translate(-150%, 0);
+  -moz-transform: translate(-150%, 0);
+  -ms-transform: translate(-150%, 0);
+  -o-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+}
+
+.compobutton:after {
+  content: attr(data-active);
+  -webkit-transform: translate(150%, 0);
+  -moz-transform: translate(150%, 0);
+  -ms-transform: translate(150%, 0);
+  -o-transform: translate(150%, 0);
+  transform: translate(150%, 0);
+}
+
+.compobutton:hover .compohover,
+.compobutton:active .compohover {
+  opacity: 0;
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  transform: scale(0.3);
+}
+
+.compobutton:hover:before,
+.compobutton:active:after{
+  opacity: 1;
+  color:#595758ff;
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.compobutton:active:before {
+  -webkit-transform: translate(-150%, 0);
+  -moz-transform: translate(-150%, 0);
+  -ms-transform: translate(-150%, 0);
+  -o-transform: translate(-150%, 0);
+  transform: translate(-150%, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+
 /*CAKE COMPO FORM*/
 
 form {
