@@ -211,6 +211,15 @@ color:#595758ff;
   background-color: white;
   color: #ff92c2ff;
   font-weight: bold;
+  text-decoration:none;
+  border:none;
+}
+
+.button-link:hover {
+  border:none;
+  text-decoration:none;
+  color:#ff92c2ff;
+
 }
 
 /* .button */
