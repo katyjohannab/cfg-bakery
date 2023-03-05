@@ -45,6 +45,10 @@ body {
   border-bottom: 10px solid #ff92c2ff;
 }
 
+a:link, a:active, a:visited {
+color:#595758ff;
+}
+
 /*TEXT ELEMENTS*/
 
 .heading-2 {
