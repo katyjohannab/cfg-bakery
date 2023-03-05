@@ -94,6 +94,9 @@ color:#595758ff;
   margin-top: 1em;
 }
 
+#navbarshadow {
+  box-shadow: 0px 10px 20px gray;
+}
 .px-3 {
   padding-left: ($spacer * 0.5) !important;
   padding-right: ($spacer * 4) !important;
